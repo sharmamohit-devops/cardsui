@@ -5,17 +5,17 @@ import { X } from "lucide-react";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Topit Card Gallery — 36 Business Card Designs" },
+      { title: "Tapit Card Gallery — 36 Business Card Designs" },
       {
         name: "description",
         content:
-          "Browse all 36 Topit NFC business card designs — illustrated fronts with contact details and QR-only backs, across gaming, education, space, retail, fashion and tech themes.",
+          "Browse all 36 Tapit NFC business card designs — illustrated fronts with contact details and QR-only backs, across gaming, education, space, retail, fashion and tech themes.",
       },
-      { property: "og:title", content: "Topit Card Gallery — 36 Business Card Designs" },
+      { property: "og:title", content: "Tapit Card Gallery — 36 Business Card Designs" },
       {
         property: "og:description",
         content:
-          "All 36 Topit NFC card designs in one gallery — fronts with details and QR backs across nine themes.",
+          "All 36 Tapit NFC card designs in one gallery — fronts with details and QR backs across nine themes.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -133,7 +133,7 @@ function Index() {
       </main>
 
       <footer className="border-t border-border py-8 text-center text-sm text-muted-foreground">
-        Topit card design gallery · 36 editions · 9 themes
+        Tapit card design gallery · 36 editions · 9 themes
       </footer>
 
       {selected && <Lightbox card={selected} onClose={() => setSelected(null)} />}
@@ -146,7 +146,7 @@ function Header({ filter, onFilter }: { filter: Filter; onFilter: (f: Filter) =>
     <header className="sticky top-0 z-40 border-b border-border bg-background/90 backdrop-blur">
       <div className="mx-auto flex w-full max-w-6xl flex-wrap items-center gap-x-6 gap-y-3 px-4 py-3 sm:px-6">
         <div className="flex items-baseline gap-3">
-          <span className="font-display text-2xl font-bold tracking-tight">Topit</span>
+          <span className="font-display text-2xl font-bold tracking-tight">Tapit</span>
           <span className="hidden text-xs font-medium uppercase tracking-[0.18em] text-muted-foreground sm:inline">
             Card Gallery
           </span>
