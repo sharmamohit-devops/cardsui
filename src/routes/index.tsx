@@ -268,9 +268,11 @@ function Lightbox({ card, onClose }: { card: Card; onClose: () => void }) {
             alt={`${card.name} — Topit card design`}
             className="max-h-[80vh] w-auto rounded-xl shadow-2xl"
           />
-          <figcaption className="mt-4 text-center">
-            <span className="font-display text-lg font-semibold">{card.name}</span>
-            <span className="ml-3 text-sm text-muted-foreground">{card.setLabel}</span>
+          <figcaption className="mt-4 flex justify-center">
+            <span className="inline-flex items-baseline gap-2 rounded-full bg-background/95 px-4 py-1.5 shadow-md">
+              <span className="font-display text-sm font-semibold text-foreground">{card.name}</span>
+              <span className="text-xs text-muted-foreground">{card.setLabel}</span>
+            </span>
           </figcaption>
         </figure>
       </div>
